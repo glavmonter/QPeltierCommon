@@ -21,6 +21,19 @@
       "repr": "Управление типом сенсора температуры",
       "address": 5
     },
+    
+    {
+      "name": "CurrentPidGetSet",
+      "repr": "The current PI controller",
+      "address": 6
+    },
+
+    {
+      "name": "TemperaturePidGetSet",
+      "repr": "The temperature PID controller",
+      "address": 7
+    },
+
     {
       "name": "Telemetry",
       "repr": "Телеметрия",
