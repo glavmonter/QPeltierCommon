@@ -1,0 +1,30 @@
+{
+  "namespace": "",
+  "commands": [
+    {
+      "name": "Nop",
+      "repr": "No operation",
+      "address": 0
+    },
+    {
+      "name": "Invalid",
+      "repr": "Неверный адрес регистра",
+      "address": 255
+    },
+    {
+      "name": "VoltageGetSet",
+      "repr": "Управление выходным напряжением, float, проценты от Vcc",
+      "address": 4
+    },
+    {
+      "name": "SensorGetSet",
+      "repr": "Управление типом сенсора температуры",
+      "address": 5
+    },
+    {
+      "name": "Telemetry",
+      "repr": "Телеметрия",
+      "address": 85
+    }
+  ]
+}
