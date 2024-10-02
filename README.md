@@ -22,7 +22,6 @@ generate_commands(${CMAKE_SOURCE_DIR}/common/commands.json)
 
 ```
 add_executable(${TARGET_NAME} ${COMMANDS_SRC})
-add_dependencies(${TARGET_NAME} ${PYTHON_VENV_TARGET})
 ```
 
 В коде используем сгенерированный хедер:

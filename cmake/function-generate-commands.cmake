@@ -33,7 +33,7 @@ add_executable(${TARGET_NAME} ${COMMANDS_SRC})
 #]=======================================================================]
 function(generate_commands COMMANDS_JSON)
     if(NOT Python3_venv_FOUND)
-        message(FATAL_ERROR "Python3 venv required for add_registers macros")
+        message(FATAL_ERROR "The Python3 virtual environment required for `generate_commands` function. Use `add_python_venv` macro first")
     endif()
 
     file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/include/)
@@ -43,6 +43,7 @@ function(generate_commands COMMANDS_JSON)
         COMMAND ${PYTHON_VENV_EXECUTABLE} -m cogapp -Dcommand_json=${COMMANDS_JSON} ${CMAKE_CURRENT_FUNCTION_LIST_DIR}/../commands.hpp.cog > ${CMAKE_CURRENT_BINARY_DIR}/include/commands.hpp
         DEPENDS ${COMMANDS_JSON}
         DEPENDS ${CMAKE_CURRENT_FUNCTION_LIST_DIR}/../commands.hpp.cog
+        DEPENDS ${PYTHON_VENV_TARGET}
     )
 
     set(COMMANDS_SRC
