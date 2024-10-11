@@ -1,13 +1,6 @@
 #pragma once
 #include <cstdint>
 
-enum PidVariableType {
-    Proportional = 0,
-    Integral = 1,
-    Derivative = 2,
-    WindUp = 3
-};
-
 namespace tec {
 
 /// @brief The TEC controller commands

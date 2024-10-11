@@ -35,6 +35,22 @@
     },
 
     {
+      "name": "WorkModeSetGet",
+      "repr": "Work Mode: Stopped, Current or Temperature stabilization, Debug",
+      "address": 8
+    },
+
+    {
+      "name": "CurrentStabGetSet",
+      "repr": "Current stabilization, A",
+      "address": 9
+    },
+    {
+      "name": "TemperatureStabGetSet",
+      "repr": "Temperature stabilization, C",
+      "address": 10
+    },
+    {
       "name": "Telemetry",
       "repr": "Телеметрия",
       "address": 85
