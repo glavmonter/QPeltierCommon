@@ -12,9 +12,14 @@
       "address": 255
     },
     {
+      "name": "VersionGet",
+      "repr": "Version of the hardware and software",
+      "address": 1
+    },
+    {
       "name": "VoltageGetSet",
       "repr": "Управление выходным напряжением, float, проценты от Vcc",
-      "address": 4
+      "address": 127
     },
     {
       "name": "SensorGetSet",
