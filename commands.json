@@ -17,9 +17,14 @@
       "address": 1
     },
     {
-      "name": "VoltageGetSet",
-      "repr": "Управление выходным напряжением, float, проценты от Vcc",
-      "address": 127
+      "name": "KeyGetSet",
+      "repr": "Security key management",
+      "address": 2
+    },
+    {
+      "name": "Save",
+      "repr": "Save current settings to EEPROM",
+      "address": 3
     },
     {
       "name": "SensorGetSet",
@@ -59,6 +64,11 @@
       "name": "Telemetry",
       "repr": "Телеметрия",
       "address": 85
+    },
+    {
+      "name": "VoltageGetSet",
+      "repr": "Управление выходным напряжением, float, проценты от Vcc",
+      "address": 127
     }
   ]
 }
