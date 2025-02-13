@@ -19,7 +19,7 @@ line = 8
 
 cnt = 0
 for v in ntc_table:
-    out_str = f'{v['r']}f'
+    out_str = '{}f'.format(v['r'])
     cog.out(out_str)
     end = '' if cnt == len(ntc_table) - 1 else ', '
     line -= 1
@@ -52,7 +52,7 @@ ntc_table = get_ntc(ntc, offset, 120)
 line = 8
 cnt = 0
 for v in ntc_table:
-    out_str = f'{v['r']}f'
+    out_str = '{}f'.format(v['r'])
     cog.out(out_str)
     end = '' if cnt == len(ntc_table) - 1 else ', '
     line -= 1
