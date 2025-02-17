@@ -61,6 +61,11 @@
       "address": 10
     },
     {
+      "name": "LimitsGetSet",
+      "repr": "The limits of regulators",
+      "address": 11
+    },
+    {
       "name": "Telemetry",
       "repr": "Телеметрия",
       "address": 85
