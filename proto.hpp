@@ -21,8 +21,14 @@ enum class Limits : uint8_t {
     VoltageHigh,    ///< Ограничение выходного напряжения в положительной области, [В]
     CurrentLow,     ///< Ограничение выходного тока в отрицательной области, [А]
     CurrentHigh,    ///< Ограничение выходного тока в положительной области, [А]
+    CurrentLimitSW, ///< Порог тока для программного отключения, [А]
 };
 
+/// @brief Скорости нагрева и охлаждения
+enum class Automat : uint8_t {
+    HeatingUp = 0,
+    CoolingDown
+};
 
 /// @brief Статусы
 enum class Status : uint32_t {

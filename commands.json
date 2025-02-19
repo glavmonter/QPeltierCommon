@@ -66,9 +66,19 @@
       "address": 11
     },
     {
+      "name": "AutomatGetSet",
+      "repr": "The speed of heating and cooling",
+      "address": 12
+    },
+    {
       "name": "Telemetry",
       "repr": "Телеметрия",
       "address": 85
+    },
+    {
+      "name": "DebugMsg",
+      "repr": "Отладка",
+      "address": 126
     },
     {
       "name": "VoltageGetSet",
